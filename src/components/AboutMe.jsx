@@ -9,11 +9,23 @@ const AboutMe = ({ inEsp, darkMode }) => {
             ? "Soy organizado, metódico y responsable, un apasionado de todo lo relacionado al mundo IT, llevo un año y medio estudiando de forma autodidacta, haciendo cursos y proyectos con el objetivo de poder trabajar de esto."
             : "I´m organized, methodic and responsable, I really love all about the IT world, I have studied as autodidact the last two years, making courses and projects with the aim of being able to work on this"}
         </span>
-        <span className="text-lg flex items-center mt-4">
+        <span
+          className={
+            darkMode
+              ? "text-lg flex items-center mt-4 text-white"
+              : "text-lg flex items-center mt-4"
+          }
+        >
           <span className="material-symbols-outlined mr-2">location_on</span>
           Montevideo, Uruguay
         </span>
-        <span className="text-lg flex items-center mt-4">
+        <span
+          className={
+            darkMode
+              ? "text-lg flex items-center mt-4 text-white"
+              : "text-lg flex items-center mt-4"
+          }
+        >
           <span className="material-symbols-outlined mr-2">
             alternate_email
           </span>
