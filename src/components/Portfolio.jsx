@@ -7,7 +7,7 @@ const Portfolio = ({ inEsp, darkMode }) => {
           <p className={darkMode ? "text-white" : ""}>
             {inEsp
               ? "Code-foro, es un proyecto que hice con la finalidad de practicar NextJs, es un foro-blog con diferentes categorías sobre desarrollo. La idea es que sea un lugar donde compartir información, tutoriales o hacer preguntas."
-              : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quis earum quo rem numquam fugiat asperiores veniam dolore ipsam a animi tempore tempora, autem magni nisi dignissimos labore molestiae provident."}
+              : "Code-fore is a website that I make to learn and practice NextJs, it´s my first project with this library. I was thinking in a place where to share some tutorials, or a place where the user can do their questions."}
           </p>
           <ul className={darkMode ? "text-white " : ""}>
             {inEsp ? "Tecnologías empleadas" : "Technologies used"}
@@ -61,7 +61,7 @@ const Portfolio = ({ inEsp, darkMode }) => {
           <p className={darkMode ? "text-white" : ""}>
             {inEsp
               ? "Proyecto hecho con react para el curso de CoderHouse, simulador de e-commerce que recive productos desde FireStore Database"
-              : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quis earum quo rem numquam fugiat asperiores veniam dolore ipsam a animi tempore tempora, autem magni nisi dignissimos labore molestiae provident."}
+              : "Project made with react for the course at CoderHouse, it´s a simulator of e-commerce. Here I used products fetched form Firebase Database"}
           </p>
           <ul className={darkMode ? "text-white " : ""}>
             {inEsp ? "Tecnologías empleadas" : "Technologies used"}
@@ -106,7 +106,7 @@ const Portfolio = ({ inEsp, darkMode }) => {
           <p className={darkMode ? "text-white" : ""}>
             {inEsp
               ? "Proyecto hecho con Vue para un desafío, consume la api de rickandmortyapi.com y además un backend propio para un sistema de mensajes para cada personaje"
-              : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quis earum quo rem numquam fugiat asperiores veniam dolore ipsam a animi tempore tempora, autem magni nisi dignissimos labore molestiae provident."}
+              : "I made this project with Vue as an interview project. Consumes the rickandmortyapi.com and it have a backend where we can create and read messages for every character"}
           </p>
           <ul className={darkMode ? "text-white " : ""}>
             {inEsp ? "Tecnologías empleadas" : "Technologies used"}
