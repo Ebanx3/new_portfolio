@@ -38,7 +38,7 @@ const AboutMe = ({ inEsp, darkMode }) => {
             rel="noopener noreferrer"
             className={
               darkMode
-                ? "font-bold text-lg uppercase text-cyan-600 hover:text-cyan-400"
+                ? "font-bold text-lg uppercase text-cyan-400 hover:text-cyan-200"
                 : "font-bold text-lg uppercase text-sky-600 hover:text-sky-400"
             }
           >
@@ -50,7 +50,7 @@ const AboutMe = ({ inEsp, darkMode }) => {
             rel="noopener noreferrer"
             className={
               darkMode
-                ? "font-bold text-lg uppercase text-cyan-600 hover:text-cyan-400 ml-8"
+                ? "font-bold text-lg uppercase text-cyan-400 hover:text-cyan-200 ml-8"
                 : "font-bold text-lg uppercase text-sky-600 hover:text-sky-400 ml-8"
             }
           >

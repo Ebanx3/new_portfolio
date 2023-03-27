@@ -43,6 +43,7 @@ function App() {
       >
         <Cursos />
       </Container>
+      <div className="h-12"></div>
     </div>
   );
 }
