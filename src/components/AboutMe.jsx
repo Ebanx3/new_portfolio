@@ -69,7 +69,7 @@ const AboutMe = ({ inEsp, darkMode }) => {
         >
           {inEsp ? "Habilidades" : "Skills"}
         </span>
-        <div className="flex p-4 gap-1 flex-wrap">
+        <div className="flex p-4 gap-1 flex-wrap justify-center">
           <div className="flex flex-col items-center mx-4">
             <div className="h-20 w-20 bg-orange-500 rounded-full flex justify-center items-center text-white font-bold text-lg">
               HTML

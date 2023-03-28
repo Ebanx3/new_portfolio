@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Container = ({ title, children, darkMode, inEsp }) => {
+const Container = ({ title, children, darkMode }) => {
   const [collapse, setCollapse] = useState(true);
 
   const onClickCertif = () => {
@@ -21,9 +21,10 @@ const Container = ({ title, children, darkMode, inEsp }) => {
           <p
             className={
               darkMode
-                ? "text-2xl font-bold text-stone-200 uppercase text-center my-5"
-                : "text-2xl font-bold text-sky-600 uppercase text-center my-5"
+                ? "sm:text-2xl font-bold text-stone-200 uppercase text-center my-5 cursor-pointer"
+                : "sm:text-2xl font-bold text-sky-600 uppercase text-center my-5 cursor-pointer"
             }
+            onClick={() => onClickCertif()}
           >
             {title}
           </p>

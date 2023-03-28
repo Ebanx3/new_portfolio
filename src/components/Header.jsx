@@ -11,7 +11,7 @@ const Header = ({ darkMode, changeDarkMode, inEsp, changeLanguage }) => {
 
   return (
     <>
-      <div className="px-3 relative top-0 left-[calc(90%)] inline-block">
+      <div className=" flex items-center justify-end mr-8">
         <button
           className={
             inEsp
@@ -36,11 +36,11 @@ const Header = ({ darkMode, changeDarkMode, inEsp, changeLanguage }) => {
           <span
             className={
               darkMode
-                ? "material-symbols-outlined text-white text-4xl"
-                : "material-symbols-outlined text-black text-4xl"
+                ? "material-symbols-outlined text-white text-2xl"
+                : "material-symbols-outlined text-black text-2xl"
             }
           >
-            light
+            {darkMode ? "dark_mode" : "light_mode"}
           </span>
         </button>
       </div>
@@ -48,8 +48,8 @@ const Header = ({ darkMode, changeDarkMode, inEsp, changeLanguage }) => {
       <div
         className={
           darkMode
-            ? "text-white text-4xl uppercase font-bold text-center mt-20"
-            : "text-stone-600 text-4xl uppercase font-bold text-center mt-20"
+            ? "text-white sm:text-4xl text-2xl uppercase font-bold text-center mt-20"
+            : "text-stone-600 sm:text-4xl text-2xl uppercase font-bold text-center mt-20"
         }
       >
         Esteban dos Santos
@@ -57,8 +57,8 @@ const Header = ({ darkMode, changeDarkMode, inEsp, changeLanguage }) => {
       <div
         className={
           darkMode
-            ? "text-cyan-500 text-3xl uppercase font-bold text-center"
-            : "text-sky-600 text-3xl uppercase font-bold text-center"
+            ? "text-cyan-500 text-xl sm:text-3xl uppercase font-bold text-center"
+            : "text-sky-600 text-xl sm:text-3xl uppercase font-bold text-center"
         }
       >
         {inEsp ? "Desarrollador Full Stack" : "Full Stack Developer"}
