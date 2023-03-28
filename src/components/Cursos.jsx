@@ -1,7 +1,7 @@
 const Cursos = () => {
   return (
     // <div className="flex justify-around flex-col lg:flex-row items-center mb-5">
-    <div className="grid grid-cols-4 mx-4 justify-items-center mb-5">
+    <div className="flex flex-wrap  mx-4 justify-around mb-5">
       <a
         href="https://www1.coderhouse.com.uy/certificados/632474a91a7013000e9f7b89?ss=7b5aa2f3-756b-4672-bf02-9b5b6c915355&fc=uy"
         target="_blank"
