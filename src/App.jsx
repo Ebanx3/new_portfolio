@@ -25,25 +25,27 @@ function App() {
           : "App min-h-screen bg-stone-100 relative"
       }
     >
-      <Header
-        darkMode={darkMode}
-        changeDarkMode={changeDarkMode}
-        inEsp={inEsp}
-        changeLanguage={changeLanguage}
-      />
-      <Container title={inEsp ? "Sobre mi" : "About me"} darkMode={darkMode}>
-        <AboutMe inEsp={inEsp} darkMode={darkMode} />
-      </Container>
-      <Container title={"Portfolio"} darkMode={darkMode}>
-        <Portfolio inEsp={inEsp} darkMode={darkMode} />
-      </Container>
-      <Container
-        title={inEsp ? "Certificados" : "Certificates"}
-        darkMode={darkMode}
-      >
-        <Cursos />
-      </Container>
-      <div className="h-12"></div>
+      <div className="max-w-6xl m-auto">
+        <Header
+          darkMode={darkMode}
+          changeDarkMode={changeDarkMode}
+          inEsp={inEsp}
+          changeLanguage={changeLanguage}
+        />
+        <Container title={inEsp ? "Sobre mi" : "About me"} darkMode={darkMode}>
+          <AboutMe inEsp={inEsp} darkMode={darkMode} />
+        </Container>
+        <Container title={"Portfolio"} darkMode={darkMode}>
+          <Portfolio inEsp={inEsp} darkMode={darkMode} />
+        </Container>
+        <Container
+          title={inEsp ? "Certificados" : "Certificates"}
+          darkMode={darkMode}
+        >
+          <Cursos />
+        </Container>
+        <div className="h-12"></div>
+      </div>
     </div>
   );
 }
