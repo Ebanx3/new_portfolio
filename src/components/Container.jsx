@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Container = ({ title, children, darkMode }) => {
   const [collapse, setCollapse] = useState(true);
@@ -13,8 +14,8 @@ const Container = ({ title, children, darkMode }) => {
       <div
         className={
           darkMode
-            ? "border-4 mx-2 p-1 border-cyan-600  rounded-lg"
-            : "p-2 shadow-md mx-2 border-sky-500  rounded-lg bg-white"
+            ? "border-4 mx-2 p-1 border-cyan-600  rounded-lg "
+            : "p-2 shadow-md mx-2 border-sky-500  rounded-lg bg-white transition-all ease-linear duration-200"
         }
       >
         <div className="relative">
@@ -39,7 +40,14 @@ const Container = ({ title, children, darkMode }) => {
             expand_more
           </span>
         </div>
-        {collapse || <div>{children}</div>}
+        {collapse || (
+          <motion.div
+            animate={{ opacity: 1, height: "auto" }}
+            initial={{ opacity: 0, height: 0 }}
+          >
+            {children}
+          </motion.div>
+        )}
       </div>
     </div>
   );

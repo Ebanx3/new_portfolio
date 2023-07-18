@@ -1,9 +1,104 @@
 const Portfolio = ({ inEsp, darkMode }) => {
   return (
-    <div>
+    <div className=" text-md">
+      <div className="flex justify-center flex-col lg:flex-row items-center mb-5 w-full 2xl:w-11/12 m-auto p-2 mt-8">
+        <img src="organizer.png" alt="" className="w:full lg:w-1/2 " />
+        <div className="w-full lg:w-1/2 p-8 ">
+          <p className={darkMode ? "text-white" : ""}>
+            {inEsp
+              ? "Consiste en un sitio donde organizar marcadores, enlaces de interés y notas. Los datos se almacenan en localStorage, en tu navegador. Además tiene el extra de brindarte el clima de tu ciudad, mediante el uso de la API de openweathermap.org. Se pueden configurar la ciudad y los colores del sitio."
+              : "It consists of a site where you can organize bookmarks, interesting links, and notes. The data is stored in localStorage, in your browser. Additionally, it has the extra feature of providing you with the weather of your city, using the openweathermap.org API. You can configure the city and the colors of the site."}
+          </p>
+          <ul className={darkMode ? "text-white " : ""}>
+            {inEsp ? "Tecnologías empleadas" : "Technologies used"}
+            <li className="ml-2">- React</li>
+            <li className="ml-2">- Vite</li>
+            <li className="ml-2">- Framer-motion</li>
+            <li className="ml-2">- Eslint</li>
+            <li className="ml-2">- Typsecript</li>
+            <li className="ml-2">- tailwindcss</li>
+          </ul>
+          <div className="flex justify-end mt-8">
+            <a
+              href="https://links-notes.netlify.app"
+              className={
+                darkMode
+                  ? "font-bold mr-4 text-cyan-400 hover:text-cyan-200"
+                  : "font-bold mr-4 text-sky-600 hover:text-sky-400"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              DEPLOY
+            </a>
+            <a
+              href="https://github.com/Ebanx3/organizer"
+              className={
+                darkMode
+                  ? "font-bold text-cyan-400 hover:text-cyan-200"
+                  : "font-bold text-sky-600 hover:text-sky-400"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              REPO
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center flex-col lg:flex-row items-center mb-5 w-full 2xl:w-11/12 m-auto p-2 mt-8">
+        <img src="perdidos.jpg" alt="" className="w:full lg:w-1/2 " />
+        <div className="w-full lg:w-1/2 p-8 ">
+          <p className={darkMode ? "text-white" : ""}>
+            {inEsp
+              ? "Esta aplicación es un espacio donde buscar un objeto que perdiste o publicar objetos que encontraste para dar con el dueño"
+              : "This application is a space to search for a lost item or post items you found in order to find the owner."}
+          </p>
+          <ul className={darkMode ? "text-white " : ""}>
+            {inEsp ? "Tecnologías empleadas" : "Technologies used"}
+            <li className="ml-2">- React</li>
+            <li className="ml-2">- NextJs</li>
+            <li className="ml-2">- Axios</li>
+            <li className="ml-2">- Mongoose</li>
+            <li className="ml-2">- Cloudinary</li>
+            <li className="ml-2">- Typsecript</li>
+            <li className="ml-2">- tailwindcss</li>
+          </ul>
+          <div className="flex justify-end mt-8">
+            <a
+              href="https://perdidos-y-encontrados.netlify.app"
+              className={
+                darkMode
+                  ? "font-bold mr-4 text-cyan-400 hover:text-cyan-200"
+                  : "font-bold mr-4 text-sky-600 hover:text-sky-400"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              DEPLOY
+            </a>
+            <a
+              href="https://github.com/Ebanx3/lostItems"
+              className={
+                darkMode
+                  ? "font-bold text-cyan-400 hover:text-cyan-200"
+                  : "font-bold text-sky-600 hover:text-sky-400"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              REPO
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="flex justify-center flex-col lg:flex-row items-center mb-5 w-full 2xl:w-11/12 m-auto p-2 mt-8">
         <img src="nosApunter.png" alt="" className="w:full lg:w-1/2 " />
-        <div className="w-full lg:w-1/2 p-8 text-lg">
+        <div className="w-full lg:w-1/2 p-8">
           <p className={darkMode ? "text-white" : ""}>
             {inEsp
               ? "La idea del proyecto era suplantar un poco los apuntes que hacía durante los cursos, y que voy revisando constantemente para recordar como hacer algunas cosas. Permite crear posts con mini tutoriales sobre como usar alguna herramienta especifica. Consta con un sistema de registro y logueo, un buscador, los posts pueden recibir checks o cruces, además se pueden guardar posts en favoritos."
@@ -53,7 +148,7 @@ const Portfolio = ({ inEsp, darkMode }) => {
 
       <div className="flex justify-center flex-col lg:flex-row items-center mb-5 w-full 2xl:w-11/12 m-auto p-2">
         <img src="code-foro.png" alt="" className="w:full lg:w-1/2 " />
-        <div className="w-full lg:w-1/2 p-8 text-lg">
+        <div className="w-full lg:w-1/2 p-8">
           <p className={darkMode ? "text-white" : ""}>
             {inEsp
               ? "Code-foro, es un proyecto que hice con la finalidad de practicar NextJs, es un foro-blog con diferentes categorías sobre desarrollo. La idea es que sea un lugar donde compartir información, tutoriales o hacer preguntas."
@@ -107,7 +202,7 @@ const Portfolio = ({ inEsp, darkMode }) => {
           alt=""
           className="w:full lg:w-1/2 "
         />
-        <div className="w-full lg:w-1/2 p-8 text-lg">
+        <div className="w-full lg:w-1/2 p-8">
           <p className={darkMode ? "text-white" : ""}>
             {inEsp
               ? "Proyecto hecho con react para el curso de CoderHouse, simulador de e-commerce que recive productos desde FireStore Database"
@@ -152,7 +247,7 @@ const Portfolio = ({ inEsp, darkMode }) => {
 
       <div className="flex justify-center flex-col lg:flex-row items-center mb-5 w-full 2xl:w-11/12 m-auto p-2 mt-8">
         <img src="ram.png" alt="" className="w:full lg:w-1/2 " />
-        <div className="w-full lg:w-1/2 p-8 text-lg">
+        <div className="w-full lg:w-1/2 p-8">
           <p className={darkMode ? "text-white" : ""}>
             {inEsp
               ? "Proyecto hecho con Vue para un desafío, consume la api de rickandmortyapi.com y además un backend propio para un sistema de mensajes para cada personaje"
